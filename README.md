@@ -2,7 +2,14 @@
 
 > Bolsas de frutas y verduras frescas, picadas y desinfectadas listas para licuar. ¡Tu dosis diaria de salud en Salamanca, Gto!
 
-Este repositorio contiene el código fuente de la Landing Page del cliente web de **NaturaBags**, desarrollada con un enfoque de alto rendimiento, diseño premium, completamente responsiva y optimizada para la conversión directa de ventas a través de WhatsApp.
+<p align="center">
+  <img src="https://img.shields.io/badge/Nuxt-4-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/pnpm-Workspace-F69220?style=for-the-badge&logo=pnpm&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Alpine-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-Stable-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+</p>
 
 ---
 
