@@ -1,0 +1,82 @@
+/* ============================================
+   NATURABAGS — Design Tokens
+   Fuente de verdad: DESIGN.md
+   ============================================ */
+
+:root {
+  /* --- Colores de marca --- */
+  --color-primary: #426900;                  /* Verde oscuro principal */
+  --color-primary-container: #8cd416;        /* Verde brillante de marca */
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #365700;  
+
+  --color-secondary: #1e6d00;
+  --color-secondary-container: #99fa75;
+  --color-on-secondary: #ffffff;
+
+  /* --- Superficies --- */
+  --color-surface: #fafbf6;                  /* Fondo general de la página */
+  --color-surface-soft: #f1f4e8;              /* Fondos de secciones alternas */
+  --color-surface-muted: #f2f2f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-lowest: #ffffff;  /* Fondos de tarjetas */
+  --color-inverse-surface: #303030;
+  --color-inverse-on-surface: #f3f0ef;
+
+  /* --- Texto --- */
+  --color-on-surface: #1b1b1c;               /* Texto principal */
+  --color-on-surface-variant: #424936;       /* Texto secundario / muted */
+  --color-text-secondary: #6b6b6b;
+  --color-text-on-accent: #33381f;           /* Texto sobre botones verdes */
+
+  /* --- Bordes --- */
+  --color-border-subtle: #e5e5e5;
+  --color-outline: #727a63;
+  --color-outline-variant: #c1cab0;
+
+  /* --- Error --- */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+
+  /* --- Chips / Badges --- */
+  --color-accent-chip-bg: #e3f0c2;
+  --color-accent-chip-text: #33381f;
+
+  /* --- Tipografía --- */
+  /* Fuentes de títulos llamativos (Descomenta la que prefieras usar): */
+  /* --font-display: 'Agbalumo', sans-serif;           Opción A: Orgánica, fluida y con curvas de pincel */
+   /*--font-display: 'Coiny', sans-serif;          /* Opción B: Muy gruesa, redonda y juguetona */
+
+   --font-display: 'Golos text', sans-serif;
+
+  /* Fuentes de texto de párrafo (Descomenta la que prefieras usar): */
+  /*--font-body: 'Geist', sans-serif;                 /* Opción A: Ultra limpia, moderna y tecnológica */
+   --font-body: 'Merriweather Sans', sans-serif; /* Opción B: Cálida, humanista y muy legible */
+
+  /* --- Radios (DESIGN.md: rounded) --- */
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius: 0.5rem;        /* 8px — Botones, inputs, bordes comunes */
+  --radius-md: 0.75rem;    /* 12px */
+  --radius-lg: 1rem;       /* 16px — Tarjetas pequeñas */
+  --radius-xl: 1.5rem;     /* 24px — Tarjetas grandes */
+  --radius-full: 9999px;   /* Pills, badges, chips */
+
+  /* --- Espaciado (base 8px) --- */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+
+  --gutter: 24px;
+  --container-max: 1280px;
+  --margin-mobile: 20px;
+  --margin-desktop: 80px;
+
+  /* --- Sombra interactiva (DESIGN.md: solo en hover de botones) --- */
+  --shadow-interactive: 0 2px 8px rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,147 @@
+.hero {
+  background-color: var(--color-surface);
+  padding-block: var(--space-8);
+  overflow: hidden;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background-color: var(--color-accent-chip-bg);
+  color: var(--color-accent-chip-text);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.hero__badge-icon {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  color: var(--color-on-surface);
+  font-size: 40px;
+}
+
+.hero__description {
+  color: var(--color-on-surface-variant);
+  max-width: 600px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.hero__btn {
+  width: 100%;
+  text-align: center;
+}
+
+.hero__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.hero__benefit-item {
+  display: flex;
+  align-items:flex-start;
+  gap: 12px;
+  color: var(--color-on-surface-variant);
+}
+
+.hero__benefit-icon {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Columna de imagen / Placeholder */
+.hero__media {
+  width: 100%;
+}
+
+.hero__image-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 500px;
+  margin-inline: auto;
+  background-color: var(--color-surface-soft);
+  border: 2px dashed var(--color-outline-variant);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+}
+
+.hero__placeholder-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__placeholder-icon {
+  font-size: 48px;
+}
+
+.hero__placeholder-desc {
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+/* Estilos de Escritorio */
+@media (min-width: 768px) {
+  .hero {
+    padding-block: var(--space-10);
+  }
+
+  .hero__container {
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero__content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero__btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__container {
+    grid-template-columns: 1.3fr 1fr;
+    gap: var(--space-10);
+  }
+}

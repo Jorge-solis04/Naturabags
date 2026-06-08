@@ -1,0 +1,91 @@
+.whatsapp-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: #25d366; /* Verde oficial de WhatsApp */
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 90;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.whatsapp-fab:hover,
+.whatsapp-fab:focus {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-fab:active {
+  transform: scale(0.95);
+}
+
+.whatsapp-fab__icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Tooltip lateral puro CSS */
+.whatsapp-fab__tooltip {
+  position: absolute;
+  right: 72px;
+  background-color: var(--color-inverse-surface);
+  color: var(--color-inverse-on-surface);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(8px);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Flechita del tooltip */
+.whatsapp-fab__tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color-inverse-surface);
+}
+
+/* Mostrar tooltip en hover */
+.whatsapp-fab:hover .whatsapp-fab__tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Ocultar tooltip en dispositivos táctiles pequeños para evitar molestias visuales */
+@media (max-width: 767px) {
+  .whatsapp-fab__tooltip {
+    display: none;
+  }
+  
+  .whatsapp-fab {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .whatsapp-fab__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
