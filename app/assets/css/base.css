@@ -124,18 +124,22 @@ ul, ol {
 .section-overline {
   display: block;
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--color-primary-container);
+  color: var(--color-primary);
   margin-bottom: var(--space-2);
 }
 
 /* --- Acento verde para texto destacado --- */
 .text-accent {
   color: var(--color-primary-container);
+}
+
+.text-accent-secondary {
+  color: var(--color-secondary)
 }
 
 /* --- Botones base --- */

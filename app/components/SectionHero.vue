@@ -10,8 +10,8 @@
         
         <h1 id="hero-heading" class="display-lg hero__title">
           NaturaBags <br />
-          <span class="text-accent">Tu jugo saludable para toda la semana</span>
         </h1>
+        <p class="display-lg hero__subtitle">Tus jugos saludables para toda la semana</p>
         
         <p class="body-lg hero__description">
           Bolsas de frutas y verduras frescas, picadas, desinfectadas y listas para licuar. Mantén tu energía alta y tu cuerpo sano sin perder tiempo. ¡Solo agrega agua o tu líquido favorito y listo!

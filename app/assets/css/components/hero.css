@@ -42,8 +42,14 @@
 
 .hero__title {
   color: var(--color-on-surface);
-  font-size: 40px;
+  font-size: 50px;
 }
+
+.hero__subtitle {
+  color: var(--color-primary-container);
+  font-size: 38px;
+}
+
 
 .hero__description {
   color: var(--color-on-surface-variant);

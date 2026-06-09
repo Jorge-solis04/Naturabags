@@ -1,12 +1,17 @@
+/* ============================================
+   NATURABAGS — Instructions CSS (Timeline)
+   ============================================ */
+
 .instructions {
   background-color: var(--color-surface-soft);
   padding-block: var(--space-8);
+  overflow: hidden; /* Evita desbordamiento de la línea del tiempo */
 }
 
 .instructions__container {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-6);
 }
 
 .instructions__header {
@@ -24,65 +29,128 @@
   margin-top: var(--space-1);
 }
 
-.instructions__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-3);
-}
-
-.instructions__step-card {
-  background-color: var(--color-surface-container-lowest);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
+/* Timeline Container */
+.instructions__timeline {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-2);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
-              box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: var(--space-6);
+  position: relative;
+  width: 100%;
 }
 
-.instructions__step-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+/* Línea de tiempo vertical para Celulares */
+.instructions__timeline::before {
+  content: '';
+  position: absolute;
+  left: 32px; /* Centrado vertical en el círculo de 64px */
+  top: 32px;
+  bottom: 32px;
+  width: 2px;
+  background-color: var(--color-primary-container);
+  z-index: 1;
 }
 
-.instructions__step-num {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-accent-chip-bg);
-  color: var(--color-accent-chip-text);
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 700;
+/* Individual Step (Celular: Fila horizontal) */
+.instructions__step {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-3);
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Circle Icon Wrapper */
+.instructions__icon-wrapper {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-container); /* Verde brillante de la paleta */
+  color: var(--color-text-on-accent); /* Texto oscuro para alto contraste */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 0 0 8px var(--color-surface-soft); /* Máscara que cubre la línea del tiempo */
+  z-index: 3;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.instructions__step:hover .instructions__icon-wrapper {
+  transform: scale(1.08);
+}
+
+.instructions__icon {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Contenedor de texto en Celular */
+.instructions__step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 8px; /* Centrado visual relativo al círculo */
+}
+
 .instructions__step-title {
   color: var(--color-on-surface);
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 .instructions__step-desc {
   color: var(--color-on-surface-variant);
+  max-width: 280px;
 }
 
-/* Estilos de Escritorio */
+/* Estilos de Escritorio (Horizontal Timeline) */
 @media (min-width: 768px) {
   .instructions {
     padding-block: var(--space-10);
   }
 
-  .instructions__grid {
-    grid-template-columns: repeat(3, 1fr);
+  .instructions__container {
+    gap: var(--space-8);
+  }
+
+  .instructions__timeline {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: var(--space-4);
   }
 
-  .instructions__step-card {
-    padding: var(--space-5);
+  /* Línea horizontal que conecta los círculos en desktop */
+  .instructions__timeline::before {
+    left: calc(100% / 6);
+    right: calc(100% / 6);
+    top: 32px; /* Centrado vertical en el círculo de 64px */
+    bottom: auto;
+    width: auto;
+    height: 2px;
+  }
+
+  /* Paso individual (Desktop: Columna vertical) */
+  .instructions__step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-2);
+  }
+
+  /* Contenedor de texto en Desktop */
+  .instructions__step-content {
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .instructions__step-desc {
+    max-width: 260px;
   }
 }
