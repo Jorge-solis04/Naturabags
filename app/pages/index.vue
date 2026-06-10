@@ -49,17 +49,17 @@ const schemaOrg = {
 
 // Registro de metadatos SEO específicos de la página (Open Graph y Twitter Cards)
 useSeoMeta({
-  title: 'Naturabags | Mix de Frutas Listas para Licuar en Salamanca',
+  title: 'Naturabags | Mix de Frutas y Verduras Listas para Licuar en Salamanca',
   description: 'Prepara tus jugos en segundos. Entregamos paquetes de fruta picada e higienizada a domicilio en Salamanca, Gto.',
-  ogTitle: 'Naturabags | Mix de Frutas Listas para Licuar',
+  ogTitle: 'Naturabags | Mix de Frutas y Verduras Listas para Licuar',
   ogDescription: 'Listos para licuar: Mix de fruta picada, desinfectada y congelada entregados a domicilio en Salamanca, Guanajuato.',
   ogImage: 'https://naturabags.com.mx/og-share-image.jpg',
   ogUrl: 'https://naturabags.com.mx',
   ogType: 'website',
   ogLocale: 'es_MX',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Naturabags | Mix de Frutas Listas para Licuar',
-  twitterDescription: 'Paquetes de fruta listos para licuar a domicilio.'
+  twitterTitle: 'Naturabags | Mix de Frutas y Verduras Listas para Licuar',
+  twitterDescription: 'Paquetes de fruta y verdura listos para licuar a domicilio.'
 })
 
 // Inyección perimetral en el HEAD del documento HTML para el JSON-LD
