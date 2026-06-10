@@ -26,7 +26,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#27AE60",
     image: "/img/kit_jugo_verde.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit de Jugo Verde de 5 porciones por $100.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Jugo Verde de 5 porciones por $100.00."
   },
   {
     id: "Mix-jugo-valencia",
@@ -43,7 +43,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#A22321",
     image: "/img/kit_jugo_valencia.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Jugo Valencia de 5 porciones por $170.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Jugo Valencia de 5 porciones por $170.00."
   },
   {
     id: "Mix-nocturno",
@@ -59,7 +59,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#7B4217",
     image: "/img/kit_nocturno.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Nocturno de 5 porciones por $130.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Nocturno de 5 porciones por $130.00."
   },
   {
     id: "Mix-hielos-de-oro",
@@ -74,7 +74,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#D9A232",
     image: "/img/kit_hielos_de_oro.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit de Hielos de Oro por $80.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Hielos de Oro por $80.00."
   },
   {
     id: "Mix-inmunovital",
@@ -91,7 +91,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#E67E22",
     image: "/img/kit_inmunovital.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Inmunovital de 5 porciones por $160.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Inmunovital de 5 porciones por $160.00."
   },
   {
     id: "Mix-cuerpo-en-calma",
@@ -107,7 +107,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#E91E63",
     image: "/img/kit_cuerpo_en_calma.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Cuerpo en Calma de 5 porciones por $200.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Cuerpo en Calma de 5 porciones por $200.00."
   },
   {
     id: "Mix-colesterol",
@@ -121,7 +121,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#4CAF50",
     image: "/img/kit_colesterol.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit para el Colesterol por $140.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit para el Colesterol por $140.00."
   },
   {
     id: "Mix-balance-tiroides",
@@ -138,7 +138,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#1E5631",
     image: "/img/kit_balance_tiroides.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Balance Tiroides por $180.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Balance Tiroides por $180.00."
   },
   {
     id: "Mix-glow-rojo",
@@ -154,6 +154,6 @@ export const products: Product[] = [
     ],
     colorTheme: "#C0392B",
     image: "/img/kit_glow_rojo.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Glow Rojo por $130.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Glow Rojo por $130.00."
   }
 ];
