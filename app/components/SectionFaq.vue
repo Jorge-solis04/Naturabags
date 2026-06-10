@@ -76,8 +76,18 @@ const faqItems = ref([
   },
   {
     question: '¿Cuánto duran las bolsas y cómo debo conservarlas?',
-    answer: 'Debes mantener las bolsas en el congelador. Gracias a nuestro proceso de congelación rápida, se conservan en perfecto estado manteniendo todas sus vitaminas, minerales y sabor natural por hasta 3 meses.'
+    answer: 'Debes mantener las bolsas en el congelador. Gracias a nuestro proceso de congelación rápida, se conservan en perfecto estado manteniendo todas sus vitaminas, minerales y sabor natural por hasta 8 meses.'
+  },
+  {
+    question: '¿Hacen entregas a domicilio?',
+    answer: 'Sí, realizamos entregas a domicilio en Salamanca, Gto. Puedes hacer tu pedido por WhatsApp y te lo llevamos directamente a tu puerta. Costo de entrega: $50.'
+  },
+  {
+    question: '¿Qué días son las entregas?',
+    answer: 'Realizamos entregas todos los días a excepción del sábado. Pedidos realizados después del mediodía se entregarán el siguiente día de entrega programado.'
   }
+
+
 ])
 </script>
 
