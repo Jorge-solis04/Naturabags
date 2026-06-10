@@ -11,18 +11,22 @@
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Alinea el botón de hamburguesa a la derecha en móvil */
   align-items: center;
   height: 100%;
+  position: relative; /* Contenedor para centrar el logo absoluto */
 }
 
 .header__logo-link {
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__logo {
-  height: 48px;
+  height: 56px; /* Más grande en móvil */
   width: auto;
   object-fit: contain;
 }
@@ -130,6 +134,20 @@
 
 /* Estilos de Escritorio */
 @media (min-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__logo-link {
+    position: relative;
+    left: auto;
+    transform: none;
+  }
+
+  .header__logo {
+    height: 48px;
+  }
+
   .header__nav {
     display: block;
   }

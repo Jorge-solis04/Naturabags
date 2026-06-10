@@ -36,24 +36,11 @@
           </NuxtLink>
         </div>
         
-        <!-- Beneficios rápidos -->
-        <ul class="hero__benefits" role="list">
-          <li class="hero__benefit-item">
-            <Icon name="lucide:droplet" size="20" class="hero__benefit-icon" aria-hidden="true" />
-            <span class="body-md">Solo agrega agua</span>
-          </li>
-          <li class="hero__benefit-item">
-            <Icon name="lucide:hand-heart" size="20" class="hero__benefit-icon" aria-hidden="true" />
-            <span class="body-md">Sin conservadores ni azúcares añadidos</span>
-          </li>
-          <li class="hero__benefit-item">
-            <Icon name="lucide:snowflake" size="20" class="hero__benefit-icon" aria-hidden="true" />
-            <span class="body-md">Congelado para conservar nutrientes</span>
-          </li>
-        </ul>
+
       </div>
       <!-- Columna derecha: Presentación visual del concepto -->
       <div class="hero__media">
+        <span class="hero__media-overline">Un vaso de jugo al día hace toda la diferencia</span>
         <div class="hero__preview-card">
           <div class="preview-card__header">
             <span class="preview-card__tag">Tu dosis diaria</span>
