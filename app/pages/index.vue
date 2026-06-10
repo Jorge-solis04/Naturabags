@@ -47,14 +47,19 @@ const schemaOrg = {
   ]
 };
 
-// Registro de metadatos SEO específicos de la página
+// Registro de metadatos SEO específicos de la página (Open Graph y Twitter Cards)
 useSeoMeta({
   title: 'Naturabags | Jugos Detox y Fruta Lista para Licuar en Salamanca',
-  description: 'Prepara tus jugos detox en segundos. Entregamos paquetes de fruta picada e higienizada a domicilio en Salamanca, Gto. Pide por la mañana, recibe por la tarde.',
-  ogTitle: 'Naturabags | Jugos Detox y Fruta Lista para Licuar en Salamanca',
-  ogDescription: 'Prepara tus jugos detox en segundos. Entregamos paquetes de fruta picada e higienizada a domicilio en Salamanca, Gto.',
+  description: 'Prepara tus jugos detox en segundos. Entregamos paquetes de fruta picada e higienizada a domicilio en Salamanca, Gto.',
+  ogTitle: 'Naturabags | Jugos Detox a Domicilio',
+  ogDescription: 'Fruta picada, desinfectada y congelada lista para tu licuadora. Pide por la mañana, recibe por la tarde en Salamanca.',
+  ogImage: 'https://naturabags.com.mx/og-share-image.jpg',
+  ogUrl: 'https://naturabags.com.mx',
   ogType: 'website',
-  ogLocale: 'es_MX'
+  ogLocale: 'es_MX',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Naturabags | Jugos Detox',
+  twitterDescription: 'Paquetes de fruta listos para licuar a domicilio.'
 })
 
 // Inyección perimetral en el HEAD del documento HTML para el JSON-LD
