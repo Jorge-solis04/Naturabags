@@ -1,12 +1,12 @@
 # ============================================
-# NATURABAGS — robots.txt
-# Permitir indexación completa para todos, incluyendo bots de IA
+# NATURABAGS — robots.txt (Optimized)
+# Global access permitted for GEO/SEO indexing
 # ============================================
 
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
 
-# Permitir explícitamente rastreadores de IA (Búsqueda y Entrenamiento)
+# Explicit AI Bot Declarations for Generative Engine Optimization
 User-agent: GPTBot
 Allow: /
 
@@ -28,11 +28,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Gemini
-Allow: /
-
 User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap
+# Global Sitemap Location
 Sitemap: https://naturabags.com.mx/sitemap.xml
