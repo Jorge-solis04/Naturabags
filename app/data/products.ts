@@ -18,15 +18,11 @@ export const products: Product[] = [
     portions: "5 porciones",
     ingredients: ["Espinaca", "Apio", "Nopal", "Pepino", "Manzana verde", "Piña", "Limón", "Jengibre", "Perejil"],
     benefits: [
-      "Espinaca: Rica en fibra y hierro, aporta saciedad",
-      "Apio: Diurético natural, ayuda a eliminar toxinas",
-      "Nopal: Controla el azúcar en sangre y mejora la digestión",
-      "Pepino: Hidratante y bajo en calorías, desinflama",
-      "Manzana verde: Aporta fibra pectina, regula el apetito",
-      "Piña: Contiene bromelina, enzima que ayuda a quemar grasa",
-      "Limón: Alcaliniza el cuerpo y estimula el metabolismo",
-      "Jengibre: Acelera el metabolismo y reduce la inflamación",
-      "Perejil: Potente diurético y desintoxicante"
+      "Depura y desintoxica el organismo de forma natural",
+      "Aporta gran saciedad y ayuda a regular el apetito",
+      "Alcaliniza el cuerpo y estimula un metabolismo activo",
+      "Mejora significativamente la digestión y desinflama",
+      "Excelente fuente de hierro, fibra y antioxidantes naturales"
     ],
     colorTheme: "#27AE60",
     image: "/img/kit_jugo_verde.png",
@@ -51,7 +47,7 @@ export const products: Product[] = [
   },
   {
     id: "Mix-nocturno",
-    name: "Mix Nocturno",
+    name: "Mix Quema Grasa Nocturno",
     price: 130,
     portions: "5 porciones",
     ingredients: ["Papaya", "Manzana", "Plátano", "Avena"],
@@ -116,7 +112,7 @@ export const products: Product[] = [
   {
     id: "Mix-colesterol",
     name: "Mix para el Colesterol",
-    price: 150,
+    price: 140,
     portions: "5 porciones",
     ingredients: ["Espinaca", "Pepino", "Zanahoria", "Manzana", "Piña", "Betabel"],
     benefits: [
@@ -125,12 +121,12 @@ export const products: Product[] = [
     ],
     colorTheme: "#4CAF50",
     image: "/img/kit_colesterol.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit para el Colesterol por $150.00."
+    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit para el Colesterol por $140.00."
   },
   {
     id: "Mix-balance-tiroides",
     name: "Mix Balance Tiroides",
-    price: 120,
+    price: 180,
     portions: "5 porciones",
     ingredients: ["Apio", "Perejil", "Pepino", "Nopal", "Piña", "Manzana", "Chía", "Linaza", "Semilla de girasol", "Semillas de cacao"],
     benefits: [
@@ -142,21 +138,22 @@ export const products: Product[] = [
     ],
     colorTheme: "#1E5631",
     image: "/img/kit_balance_tiroides.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Balance Tiroides por $120.00."
+    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Balance Tiroides por $180.00."
   },
   {
     id: "Mix-glow-rojo",
     name: "Mix Glow Rojo",
-    price: 140,
+    price: 130,
     portions: "5 porciones",
     ingredients: ["Betabel", "Zanahoria", "Fresa"],
     benefits: [
-      "Betabel: Rico en antioxidantes y fuente natural de nutrientes",
-      "Zanahoria: Fuente de vitamina A, que contribuye al cuidado de la piel y la vista",
-      "Fresa: Rica en vitamina C y antioxidantes, aporta frescura y sabor natural"
+      "Gran aporte de antioxidantes y nutrientes esenciales para el día",
+      "Favorece el cuidado natural de la piel y mejora la salud visual",
+      "Aporta frescura, energía y vitamina C de origen natural",
+      "Ayuda a combatir el daño celular y promueve la vitalidad"
     ],
     colorTheme: "#C0392B",
     image: "/img/kit_glow_rojo.png",
-    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Glow Rojo por $140.00."
+    whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Glow Rojo por $130.00."
   }
 ];

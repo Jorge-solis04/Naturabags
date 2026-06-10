@@ -85,7 +85,12 @@ const faqItems = ref([
   {
     question: '¿Qué días son las entregas?',
     answer: 'Realizamos entregas todos los días a excepción del sábado. Pedidos realizados después del mediodía se entregarán el siguiente día de entrega programado.'
-  }
+  },
+  {
+    question: '¿Puedo personalizar mi pedido?',
+    answer: 'Sí, ofrecemos opciones de personalización. Puedes elegir entre nuestras combinaciones predefinidas o solicitar una mezcla personalizada con tus frutas y verduras favoritas. Solo háznoslo saber al hacer tu pedido por WhatsApp.'
+  },
+  
 
 
 ])

@@ -30,9 +30,9 @@
             <Icon name="mdi:blender" class="instructions__icon" aria-hidden="true" />
           </div>
           <div class="instructions__step-content">
-            <h3 class="headline-md instructions__step-title">2. Agrega agua</h3>
+            <h3 class="headline-md instructions__step-title">2. Agrega medio litro de agua</h3>
             <p class="body-md instructions__step-desc">
-              Añade líquido y licúa por unos segundos.
+              Añade agua y licúa.
             </p>
           </div>
         </div>
