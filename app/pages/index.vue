@@ -2,6 +2,7 @@
   <div class="landing-page">
     <SectionHero />
     <SectionInstructions />
+    <SectionCatalog />
   </div>
 </template>
 
