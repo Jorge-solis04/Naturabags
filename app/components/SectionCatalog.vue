@@ -22,13 +22,15 @@
         >
           <!-- Contenedor de Imagen y Precio -->
           <div class="product-card__image-wrapper">
-            <img 
+            <NuxtImg 
               :src="product.image" 
               :alt="`Bolsa lista para licuar sabor ${product.name}`" 
               class="product-card__image"
+              width="300"
+              height="300"
+              sizes="xs:100vw sm:300px"
+              format="webp"
               loading="lazy"
-              width="400"
-              height="400"
             />
             <span class="product-card__price">${{ product.price }}</span>
           </div>

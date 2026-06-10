@@ -54,18 +54,7 @@
       </div>
 
       <!-- Imagen/Mockup (Columna derecha) -->
-      <div class="hero__media">
-        <!-- Contenedor placeholder visual según regla del usuario -->
-        <div class="hero__image-placeholder">
-          <div class="hero__placeholder-content">
-            <span class="hero__placeholder-icon" aria-hidden="true">🥤</span>
-            <p class="label-lg">Espacio para Imagen Principal</p>
-            <p class="label-md hero__placeholder-desc">
-              Recomendado: Bolsa de frutas de 600x600px (.webp transparente)
-            </p>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </section>
 </template>

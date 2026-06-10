@@ -6,8 +6,14 @@ export default defineNuxtConfig({
   // SSG: pre-renderiza HTML completo (no SPA vacío)
   ssr: true,
 
-  // Módulo oficial para auto-descargar y self-hostear fuentes
-  modules: ['@nuxt/fonts', '@nuxt/icon'],
+  // Módulos oficiales
+  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
+
+  // Configuración de Nuxt Image para optimización automática
+  image: {
+    format: ['webp', 'avif'],
+    screens: { xs: 320, sm: 640, md: 768, lg: 1024 }
+  },
 
   // Fuentes del design system seleccionadas por el usuario
   fonts: {
@@ -38,6 +44,7 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/logonb.ico' },
         { rel: 'canonical', href: 'https://naturabags.com.mx' },
       ],
     },

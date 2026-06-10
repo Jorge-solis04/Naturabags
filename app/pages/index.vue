@@ -8,14 +8,61 @@
 
 
 <script setup>
+// El grafo JSON-LD para desambiguar la entidad local frente a la marca de empaques global
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FoodDeliveryService",
+      "@id": "https://naturabags.com.mx/#delivery-service",
+      "name": "Naturabags Jugos Detox",
+      "url": "https://naturabags.com.mx",
+      "logo": "https://naturabags.com.mx/logonb.png", // Apuntando al archivo real logonb.png
+      "image": "https://naturabags.com.mx/hero-jugos.jpg",
+      "telephone": "+524646526465",
+      "priceRange": "$$",
+      "description": "Servicio local en Salamanca de preparación y entrega a domicilio de fruta picada lista para licuar.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Naturabags",
+        "telephone": "+524646526465",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Salamanca",
+          "addressRegion": "Guanajuato",
+          "addressCountry": "MX"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Salamanca",
+          "sameAs": "https://es.wikipedia.org/wiki/Salamanca_(Guanajuato)"
+        }
+      ]
+    }
+  ]
+};
+
 // Registro de metadatos SEO específicos de la página
 useSeoMeta({
-  title: 'NaturaBags — Jugos Naturales Listos para Licuar | Salamanca',
-  description: 'Bolsas de frutas y verduras frescas picadas y desinfectadas listas para licuar. Entrega a domicilio en Salamanca, Gto. 100% natural, sin conservadores.',
-  ogTitle: 'NaturaBags — Jugos Naturales Listos para Licuar',
-  ogDescription: 'Bolsas de frutas y verduras frescas picadas y desinfectadas listas para licuar. Entrega a domicilio en Salamanca, Gto.',
+  title: 'Naturabags | Jugos Detox y Fruta Lista para Licuar en Salamanca',
+  description: 'Prepara tus jugos detox en segundos. Entregamos paquetes de fruta picada e higienizada a domicilio en Salamanca, Gto. Pide por la mañana, recibe por la tarde.',
+  ogTitle: 'Naturabags | Jugos Detox y Fruta Lista para Licuar en Salamanca',
+  ogDescription: 'Prepara tus jugos detox en segundos. Entregamos paquetes de fruta picada e higienizada a domicilio en Salamanca, Gto.',
   ogType: 'website',
   ogLocale: 'es_MX'
+})
+
+// Inyección perimetral en el HEAD del documento HTML para el JSON-LD
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(schemaOrg)
+    }
+  ]
 })
 </script>
 
