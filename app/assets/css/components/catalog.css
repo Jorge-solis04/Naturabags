@@ -57,8 +57,8 @@
 /* --- Grid de tarjetas --- */
 .catalog__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 @media (min-width: 768px) {
@@ -77,20 +77,20 @@
 
 /* --- Tarjeta de Producto --- */
 .product-card {
-  /* Variables de escala adaptables */
-  --card-padding: 12px;
-  --card-title-size: 15px;
-  --card-btn-size: 12px;
-  --card-btn-padding: 10px 12px;
-  --card-chip-size: 10px;
-  --card-chip-padding: 2px 8px;
-  --card-price-size: 11px;
-  --card-price-padding: 4px 10px;
-  --card-toggle-padding: 8px 10px;
-  --card-toggle-size: 11px;
-  --card-benefit-size: 11px;
-  --card-benefit-padding: 8px 4px 10px;
-  --card-border-radius: var(--radius-md); /* 12px */
+  /* Variables de escala adaptables (optimizadas para 1 columna en móvil) */
+  --card-padding: 20px;
+  --card-title-size: 21px;
+  --card-btn-size: 16px;
+  --card-btn-padding: 14px 20px;
+  --card-chip-size: 13px;
+  --card-chip-padding: 6px 12px;
+  --card-price-size: 14px;
+  --card-price-padding: 6px 14px;
+  --card-toggle-padding: 10px 14px;
+  --card-toggle-size: 14px;
+  --card-benefit-size: 14px;
+  --card-benefit-padding: 12px 8px;
+  --card-border-radius: var(--radius-lg); /* 16px */
 
   background-color: var(--color-surface-container-lowest);
   border: 1px solid var(--color-border-subtle);
@@ -206,13 +206,34 @@
   font-size: var(--card-title-size);
   font-weight: 700;
   color: var(--color-on-surface);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   line-height: 1.2;
+}
+
+.product-card__portions {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--theme-color); /* Color dinámico de marca de cada bolsa */
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.product-card__portions-icon {
+  color: var(--theme-color);
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
   .product-card__title {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
+  }
+  .product-card__portions {
+    font-size: 15px;
+    margin-bottom: 14px;
   }
 }
 

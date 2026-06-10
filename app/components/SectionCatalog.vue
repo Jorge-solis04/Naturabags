@@ -38,6 +38,10 @@
           <!-- Información del Producto -->
           <div class="product-card__info">
             <h3 class="product-card__title">{{ product.name }}</h3>
+            <span class="product-card__portions">
+              <Icon name="lucide:cup-soda" size="16" class="product-card__portions-icon" aria-hidden="true" />
+              {{ product.portions }}
+            </span>
 
             <!-- Ingredientes -->
             <div class="product-card__ingredients">

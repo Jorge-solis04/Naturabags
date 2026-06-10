@@ -2,6 +2,7 @@ export interface Product {
   id: string;
   name: string;
   price: number;
+  portions: string; // Cantidad de porciones (ej: "Rinde 5 porciones")
   ingredients: string[];
   benefits: string[];
   colorTheme: string;
@@ -11,9 +12,10 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "kit-jugo-verde",
-    name: "Kit de Jugo Verde",
+    id: "Mix-jugo-verde",
+    name: "Mix de Jugo Verde",
     price: 100,
+    portions: "5 porciones",
     ingredients: ["Espinaca", "Apio", "Nopal", "Pepino", "Manzana verde", "Piña", "Limón", "Jengibre", "Perejil"],
     benefits: [
       "Espinaca: Rica en fibra y hierro, aporta saciedad",
@@ -31,9 +33,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit de Jugo Verde de 5 porciones por $100.00."
   },
   {
-    id: "kit-jugo-valencia",
-    name: "Kit Jugo Valencia",
+    id: "Mix-jugo-valencia",
+    name: "Mix Jugo Valencia",
     price: 170,
+    portions: "5 porciones",
     ingredients: ["Arándano", "Jícama", "Piña", "Espinaca", "Cúrcuma", "Jengibre", "Betabel", "Limón", "Toronja"],
     benefits: [
       "Acelera el metabolismo y ayuda a quemar grasa",
@@ -47,9 +50,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Jugo Valencia de 5 porciones por $170.00."
   },
   {
-    id: "kit-nocturno",
-    name: "Kit Nocturno",
+    id: "Mix-nocturno",
+    name: "Mix Nocturno",
     price: 130,
+    portions: "5 porciones",
     ingredients: ["Papaya", "Manzana", "Plátano", "Avena"],
     benefits: [
       "Ayuda a quemar grasa durante la noche",
@@ -62,9 +66,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Nocturno de 5 porciones por $130.00."
   },
   {
-    id: "kit-hielos-de-oro",
-    name: "Kits de Hielos de Oro",
+    id: "Mix-hielos-de-oro",
+    name: "Mix de Hielos de Oro",
     price: 80,
+    portions: "6 hielos",
     ingredients: ["Cúrcuma", "Jengibre", "Naranja", "Limón", "Toque de pimienta"],
     benefits: [
       "Anti-inflamatorios naturales y antioxidantes",
@@ -76,9 +81,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit de Hielos de Oro por $80.00."
   },
   {
-    id: "kit-inmunovital",
-    name: "Kit Inmunovital",
+    id: "Mix-inmunovital",
+    name: "Mix Inmunovital",
     price: 160,
+    portions: "5 porciones",
     ingredients: ["Betabel", "Espinaca", "Plátano", "Naranja", "Zanahoria", "Almendras"],
     benefits: [
       "Potencia tus defensas y previene enfermedades",
@@ -92,9 +98,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Inmunovital de 5 porciones por $160.00."
   },
   {
-    id: "kit-cuerpo-en-calma",
-    name: "Kit Cuerpo en Calma",
+    id: "Mix-cuerpo-en-calma",
+    name: "Mix Cuerpo en Calma",
     price: 200,
+    portions: "5 porciones",
     ingredients: ["Papaya", "Manzana", "Plátano", "Avena", "Almendras", "Semillas de cacao", "Linaza", "Chía", "Semillas de girasol"],
     benefits: [
       "Vitaminas B1, B2, B3, A, D, E y K",
@@ -107,9 +114,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Cuerpo en Calma de 5 porciones por $200.00."
   },
   {
-    id: "kit-colesterol",
-    name: "Kit para el Colesterol",
+    id: "Mix-colesterol",
+    name: "Mix para el Colesterol",
     price: 150,
+    portions: "5 porciones",
     ingredients: ["Espinaca", "Pepino", "Zanahoria", "Manzana", "Piña", "Betabel"],
     benefits: [
       "Ayuda a regular los niveles de colesterol en sangre",
@@ -120,9 +128,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit para el Colesterol por $150.00."
   },
   {
-    id: "kit-balance-tiroides",
-    name: "Kit Balance Tiroides",
+    id: "Mix-balance-tiroides",
+    name: "Mix Balance Tiroides",
     price: 120,
+    portions: "5 porciones",
     ingredients: ["Apio", "Perejil", "Pepino", "Nopal", "Piña", "Manzana", "Chía", "Linaza", "Semilla de girasol", "Semillas de cacao"],
     benefits: [
       "Apoya la función tiroidea y hormonal",
@@ -136,9 +145,10 @@ export const products: Product[] = [
     whatsappMsg: "Hola Natura Bags, me interesa adquirir el Kit Balance Tiroides por $120.00."
   },
   {
-    id: "kit-glow-rojo",
-    name: "Kit Glow Rojo",
+    id: "Mix-glow-rojo",
+    name: "Mix Glow Rojo",
     price: 140,
+    portions: "5 porciones",
     ingredients: ["Betabel", "Zanahoria", "Fresa"],
     benefits: [
       "Betabel: Rico en antioxidantes y fuente natural de nutrientes",

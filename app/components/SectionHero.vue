@@ -74,7 +74,7 @@
                 <Icon name="lucide:snowflake" size="24" class="preview-item__icon" aria-hidden="true" />
               </div>
               <div class="preview-item__text">
-                <h3 class="preview-item__title">Congelación rápida (IQF)</h3>
+                <h3 class="preview-item__title">Congelación rápida </h3>
                 <p class="preview-item__desc">Mantiene el 100% de los nutrientes y sabor natural.</p>
               </div>
             </div>
