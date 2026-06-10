@@ -36,44 +36,44 @@
         <span class="header__toggle-bar"></span>
       </button>
     </div>
-
-    <!-- Mobile Nav Menu -->
-    <transition name="menu-slide">
-      <div 
-        v-if="isMenuOpen" 
-        id="mobile-menu"
-        class="header__mobile-menu"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Menú de navegación"
-      >
-        <nav class="header__mobile-nav">
-          <ul class="header__mobile-nav-list">
-            <li>
-              <a href="#catalogo" class="header__mobile-nav-link" @click="closeMenu">
-                Catálogo
-              </a>
-            </li>
-            <li>
-              <a href="#mision" class="header__mobile-nav-link" @click="closeMenu">
-                Misión
-              </a>
-            </li>
-            <li>
-              <a href="#preguntas" class="header__mobile-nav-link" @click="closeMenu">
-                Preguntas
-              </a>
-            </li>
-            <li class="header__mobile-cta-item">
-              <a :href="whatsappUrl" class="btn btn--primary header__mobile-cta" @click="closeMenu">
-                Pedir ahora por WhatsApp
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </transition>
   </header>
+
+  <!-- Mobile Nav Menu -->
+  <transition name="menu-slide">
+    <div 
+      v-if="isMenuOpen" 
+      id="mobile-menu"
+      class="header__mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menú de navegación"
+    >
+      <nav class="header__mobile-nav">
+        <ul class="header__mobile-nav-list">
+          <li>
+            <a href="#catalogo" class="header__mobile-nav-link" @click="closeMenu">
+              Catálogo
+            </a>
+          </li>
+          <li>
+            <a href="#mision" class="header__mobile-nav-link" @click="closeMenu">
+              Misión
+            </a>
+          </li>
+          <li>
+            <a href="#preguntas" class="header__mobile-nav-link" @click="closeMenu">
+              Preguntas
+            </a>
+          </li>
+          <li class="header__mobile-cta-item">
+            <a :href="whatsappUrl" class="btn btn--primary header__mobile-cta" @click="closeMenu">
+              Pedir ahora por WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </transition>
 </template>
 
 <script setup>

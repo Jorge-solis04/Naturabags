@@ -1,0 +1,150 @@
+.faq {
+  background-color: var(--color-surface-soft); /* Fondo gris/verdoso suave (#f1f4e8) */
+  padding-block: var(--space-8);
+}
+
+.faq__container {
+  max-width: 800px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.faq__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.faq__subtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-container); /* #8CD416 */
+}
+
+.faq__title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.faq__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq__item {
+  background-color: var(--color-surface-container-lowest);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg); /* 16px */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.faq__item--open {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  border-color: var(--color-outline-variant);
+}
+
+.faq__question-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 18px 24px;
+  text-align: left;
+  outline: none;
+}
+
+.faq__question {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-on-surface);
+  line-height: 1.4;
+  padding-right: 16px;
+}
+
+.faq__icon-wrapper {
+  color: var(--color-primary-container); /* Icono verde brillante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.faq__icon {
+  font-size: 20px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq__item--open .faq__icon {
+  transform: rotate(-180deg);
+}
+
+/* Animación de apertura del acordeón (Grid transition para alto auto) */
+.faq__answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.faq__answer-wrapper--open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.faq__answer-inner {
+  min-height: 0;
+}
+
+.faq__answer {
+  padding: 0 24px 18px 24px;
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Adaptabilidad a Escritorio (min-width: 768px) */
+@media (min-width: 768px) {
+  .faq {
+    padding-block: var(--space-10);
+  }
+
+  .faq__title {
+    font-size: 34px;
+  }
+
+  .faq__question {
+    font-size: 18px;
+  }
+
+  .faq__answer {
+    font-size: 15px;
+    padding-bottom: 22px;
+  }
+
+  .faq__question-btn {
+    padding: 22px 32px;
+  }
+
+  .faq__answer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

@@ -24,10 +24,19 @@
         <h3 class="label-lg footer__title">Contacto</h3>
         <ul class="footer__list" role="list">
           <li class="footer__contact-item">
-            <span class="body-md">📞 +52 464 652 6465</span>
+            <span class="body-md">
+              
+              <Icon name="mdi:whatsapp" size="20" class="footer__contact-icon" aria-hidden="true" />
+               464 652 6465
+
+
+            </span>
           </li>
           <li class="footer__contact-item">
-            <span class="body-md">📍 Salamanca, Gto.</span>
+
+            <Icon name="lucide:map" size="20" class="footer__contact-icon" aria-hidden="true" />
+
+            <span class="body-md"> Salamanca, Gto.</span>
           </li>
           <li class="footer__contact-item footer__cta-wrapper">
             <a :href="whatsappUrl" class="btn btn--primary footer__cta">

@@ -3,6 +3,8 @@
     <SectionHero />
     <SectionInstructions />
     <SectionCatalog />
+    <SectionMission />
+    <SectionFaq />
   </div>
 </template>
 

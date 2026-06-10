@@ -52,9 +52,47 @@
           </li>
         </ul>
       </div>
-
-      <!-- Imagen/Mockup (Columna derecha) -->
-      
+      <!-- Columna derecha: Presentación visual del concepto -->
+      <div class="hero__media">
+        <div class="hero__preview-card">
+          <div class="preview-card__header">
+            <span class="preview-card__tag">Tu dosis diaria</span>
+            <h2 class="preview-card__title">¿Qué contiene cada bolsa?</h2>
+          </div>
+          <div class="preview-card__body">
+            <div class="preview-item">
+              <div class="preview-item__icon-wrapper">
+                <Icon name="lucide:apple" size="24" class="preview-item__icon" aria-hidden="true" />
+              </div>
+              <div class="preview-item__text">
+                <h3 class="preview-item__title">Fruta y verdura picada</h3>
+                <p class="preview-item__desc">Porciones exactas desinfectadas y listas para usar.</p>
+              </div>
+            </div>
+            <div class="preview-item">
+              <div class="preview-item__icon-wrapper">
+                <Icon name="lucide:snowflake" size="24" class="preview-item__icon" aria-hidden="true" />
+              </div>
+              <div class="preview-item__text">
+                <h3 class="preview-item__title">Congelación rápida (IQF)</h3>
+                <p class="preview-item__desc">Mantiene el 100% de los nutrientes y sabor natural.</p>
+              </div>
+            </div>
+            <div class="preview-item">
+              <div class="preview-item__icon-wrapper">
+                <Icon name="lucide:heart" size="24" class="preview-item__icon" aria-hidden="true" />
+              </div>
+              <div class="preview-item__text">
+                <h3 class="preview-item__title">Sin aditivos ni conservadores</h3>
+                <p class="preview-item__desc">0% azúcares añadidos, 0% conservadores. 100% natural.</p>
+              </div>
+            </div>
+          </div>
+          <div class="preview-card__footer">
+            <span class="preview-card__footer-text"> Envasado higiénicamente en Salamanca, Guanajuato, México.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
