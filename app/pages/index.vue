@@ -54,12 +54,20 @@ useSeoMeta({
   ogTitle: 'Naturabags | Mix de Frutas y Verduras Listas para Licuar',
   ogDescription: 'Listos para licuar: Mix de fruta picada, desinfectada y congelada entregados a domicilio en Salamanca, Guanajuato.',
   ogImage: 'https://naturabags.com.mx/og-share-image.jpg',
+  ogImageSecureUrl: 'https://naturabags.com.mx/og-share-image.jpg',
+  ogImageType: 'image/jpeg',
+  ogImageWidth: 1024,
+  ogImageHeight: 1024,
+  ogImageAlt: 'Naturabags - Mix de Frutas y Verduras Listas para Licuar en Salamanca',
   ogUrl: 'https://naturabags.com.mx',
   ogType: 'website',
   ogLocale: 'es_MX',
+  ogSiteName: 'Naturabags',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Naturabags | Mix de Frutas y Verduras Listas para Licuar',
-  twitterDescription: 'Paquetes de fruta y verdura listos para licuar a domicilio.'
+  twitterDescription: 'Paquetes de fruta y verdura listos para licuar a domicilio.',
+  twitterImage: 'https://naturabags.com.mx/og-share-image.jpg',
+  twitterImageAlt: 'Naturabags - Mix de Frutas y Verduras Listas para Licuar en Salamanca'
 })
 
 // Inyección perimetral en el HEAD del documento HTML para el JSON-LD
