@@ -7,6 +7,14 @@
         <p class="body-md footer__description">
           Bolsas de frutas y verduras picadas, desinfectadas y listas para licuar. Tu porción diaria de bienestar desde Salamanca, Guanajuato.
         </p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/share/18nD6grSEg/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+            <Icon name="mdi:facebook" size="24" />
+          </a>
+          <a href="https://www.instagram.com/naturabags_mx?igsh=MXdiaHQ2ZHhoZ2xyOA==" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <Icon name="mdi:instagram" size="24" />
+          </a>
+        </div>
       </div>
 
       <!-- Links de Navegación -->
