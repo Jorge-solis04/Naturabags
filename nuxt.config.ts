@@ -6,8 +6,16 @@ export default defineNuxtConfig({
   // SSG: pre-renderiza HTML completo (no SPA vacío)
   ssr: true,
 
-  // Módulos oficiales
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
+  // Módulos oficiales y de comunidad
+  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image', 'nuxt-umami'],
+
+  // Configuración de Umami Analytics
+  umami: {
+    // Estas configuraciones se pueden sobrescribir con variables de entorno en Dokploy:
+    // NUXT_UMAMI_HOST y NUXT_UMAMI_ID
+    ignoreLocalhost: true, // Evita contar tus propias visitas en localhost
+    autoTrack: true,       // Rastrear páginas automáticamente al navegar
+  },
 
   // Configuración de Nuxt Image para optimización automática
   image: {
