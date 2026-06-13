@@ -53,6 +53,8 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/logonb.ico' },
+        { rel: 'icon', type: 'image/png', href: '/logonb.png' },
+        { rel: 'apple-touch-icon', href: '/logonb.png' },
         { rel: 'canonical', href: 'https://naturabags.com.mx' },
       ],
     },
