@@ -8,9 +8,27 @@ export interface Product {
   colorTheme: string;
   image: string;
   whatsappMsg: string;
+  featured?: boolean | string; // Destaca el producto (true = "Destacado", o un string como "¡Nuevo!")
 }
 
 export const products: Product[] = [
+   {
+    id: "Kit-shots-de-bienestar",
+    name: "Kit de Shots de curcuma y jengibre",
+    price: 150,
+    portions: "7 shots de 30 ml",
+    ingredients: ["Cúrcuma", "Jengibre", "Naranja", "Zanahoria", "Limón", "Toque de pimienta"],
+    benefits: [
+      "Refuerza tus defensas",
+      "Antiinflamatorio natural",
+      "Aporta energía",
+      "Favorece la digestión"
+    ],
+    colorTheme: "#E67A00",
+    image: "/img/Three_products_in_pyramid_formation_202608010948.jpeg",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de 7 Shots de Bienestar por $150.00.",
+    featured: "¡Nuevo!"
+  },
   {
     id: "Mix-jugo-verde",
     name: "Mix de Jugo Verde",
@@ -25,8 +43,43 @@ export const products: Product[] = [
       "Excelente fuente de hierro, fibra y antioxidantes naturales"
     ],
     colorTheme: "#27AE60",
-    image: "/img/kit_jugo_verde.png",
-    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Jugo Verde de 5 porciones por $100.00."
+    image: "/img/kit_jugo_verde.jpeg",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Jugo Verde de 5 porciones por $100.00.",
+    featured: true
+  },
+  {
+    id: "Mix-nocturno",
+    name: "Mix Quema Grasa Nocturno",
+    price: 130,
+    portions: "5 porciones",
+    ingredients: ["Papaya", "Manzana", "Plátano", "Avena"],
+    benefits: [
+      "Ayuda a quemar grasa durante la noche",
+      "Mejora la digestión and reduce la inflamación",
+      "Aporta saciedad y controla los antojos nocturnos",
+      "Favorece un sueño reparador y profundo"
+    ],
+    colorTheme: "#7B4217",
+    image: "/img/kit_nocturno.jpeg",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Nocturno de 5 porciones por $130.00.",
+    featured: true
+  },
+  {
+    id: "Kit-detox-higado",
+    name: "Kit de Detox de Hígado",
+    price: 130,
+    portions: "5 porciones",
+    ingredients: ["Espinaca", "Apio", "Perejil", "Zanahoria", "Papaya", "Jengibre", "Curcuma", "Betabel", "Avena"],
+    benefits: [
+      "Ayuda a eliminar toxinas y sustancias dañinas",
+      "Protege y regenera la función hepática",
+      "Mejora tu vitalidad y energía",
+      "Alivia la inflamación y favorece la digestión"
+    ],
+    colorTheme: "#991d01",
+    image: "/img/kit_higado.jpeg",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Detox de Hígado por $130.00.",
+    featured: "¡Nuevo!"
   },
   {
     id: "Mix-jugo-valencia",
@@ -42,24 +95,8 @@ export const products: Product[] = [
       "Aporta energía y vitalidad"
     ],
     colorTheme: "#A22321",
-    image: "/img/kit_jugo_valencia.png",
+    image: "/img/kit_jugo_valencia.jpg",
     whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Jugo Valencia de 5 porciones por $170.00."
-  },
-  {
-    id: "Mix-nocturno",
-    name: "Mix Quema Grasa Nocturno",
-    price: 130,
-    portions: "5 porciones",
-    ingredients: ["Papaya", "Manzana", "Plátano", "Avena"],
-    benefits: [
-      "Ayuda a quemar grasa durante la noche",
-      "Mejora la digestión and reduce la inflamación",
-      "Aporta saciedad y controla los antojos nocturnos",
-      "Favorece un sueño reparador y profundo"
-    ],
-    colorTheme: "#7B4217",
-    image: "/img/kit_nocturno.png",
-    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Nocturno de 5 porciones por $130.00."
   },
   {
     id: "Mix-hielos-de-oro",
@@ -73,7 +110,7 @@ export const products: Product[] = [
       "Aportan energía limpia y vitalidad para tu día"
     ],
     colorTheme: "#D9A232",
-    image: "/img/kit_hielos_de_oro.png",
+    image: "/img/kit_hielos_de_oro.jpeg",
     whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Hielos de Oro por $80.00."
   },
   {
@@ -137,7 +174,7 @@ export const products: Product[] = [
       "Aporta energía natural sin cafeína"
     ],
     colorTheme: "#1E5631",
-    image: "/img/kit_balance_tiroides.png",
+    image: "/img/kit_balance_tiroides.jpeg",
     whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Balance Tiroides por $180.00."
   },
   {
@@ -153,7 +190,8 @@ export const products: Product[] = [
       "Ayuda a combatir el daño celular y promueve la vitalidad"
     ],
     colorTheme: "#C0392B",
-    image: "/img/kit_glow_rojo.png",
+    image: "/img/kit_glow_rojo.jpeg",
     whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Glow Rojo por $130.00."
-  }
+  },
+
 ];

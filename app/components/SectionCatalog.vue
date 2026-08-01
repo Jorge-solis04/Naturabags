@@ -22,6 +22,7 @@
         >
           <!-- Contenedor de Imagen y Precio -->
           <div class="product-card__image-wrapper">
+            <ProductBadge :featured="product.featured" />
             <NuxtImg 
               :src="product.image" 
               :alt="`Bolsa lista para licuar sabor ${product.name}`" 

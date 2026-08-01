@@ -242,3 +242,450 @@
     gap: var(--space-10);
   }
 }
+
+/* --- Botón CTA del Catálogo con Animación Verde y Hojas --- */
+.hero__btn--cta-catalog {
+  position: relative;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2e4d00 50%, var(--color-secondary) 100%);
+  color: var(--color-on-primary);
+  border: 1px solid rgba(140, 212, 22, 0.4);
+  border-radius: var(--radius-full);
+  padding: 12px 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(66, 105, 0, 0.25), 0 0 0 0 rgba(140, 212, 22, 0.5);
+  animation: ctaPulseGlow 3s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s ease;
+  z-index: 1;
+}
+
+/* Efecto de destello de luz (Shimmer) */
+.hero__btn--cta-catalog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  animation: ctaShimmer 4s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.hero__btn--cta-catalog:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(66, 105, 0, 0.35), 0 0 20px rgba(140, 212, 22, 0.6);
+  border-color: var(--color-primary-container);
+  color: var(--color-on-primary);
+}
+
+.hero__btn--cta-catalog:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Contenedor de hojas animadas */
+.hero__btn-leaves-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+
+/* Hoja verde */
+.hero__btn-leaf--1 {
+  color: var(--color-primary-container);
+  animation: leafSway 3s infinite ease-in-out;
+  transform-origin: bottom center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero__btn-cta-text {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero__btn-arrow {
+  color: var(--color-primary-container);
+  animation: arrowBounce 1.8s infinite ease-in-out;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.hero__btn--cta-catalog:hover .hero__btn-arrow {
+  transform: translateY(4px);
+}
+
+.hero__btn--cta-catalog:hover .hero__btn-leaf--1 {
+  transform: rotate(-16deg) scale(1.12) translateY(-1px);
+  animation-play-state: paused;
+}
+
+/* --- Keyframes de Animaciones --- */
+@keyframes ctaPulseGlow {
+  0% {
+    box-shadow: 0 4px 16px rgba(66, 105, 0, 0.25), 0 0 0 0 rgba(140, 212, 22, 0.5);
+  }
+  50% {
+    box-shadow: 0 6px 22px rgba(66, 105, 0, 0.4), 0 0 0 12px rgba(140, 212, 22, 0);
+  }
+  100% {
+    box-shadow: 0 4px 16px rgba(66, 105, 0, 0.25), 0 0 0 0 rgba(140, 212, 22, 0);
+  }
+}
+
+@keyframes ctaShimmer {
+  0% {
+    left: -100%;
+  }
+  30%, 100% {
+    left: 200%;
+  }
+}
+
+@keyframes leafSway {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-10deg) translateY(-1px);
+  }
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+/* --- Botón CTA Cupón de Descuento con Animación --- */
+.hero__btn--coupon {
+  position: relative;
+  background: linear-gradient(135deg, #fff000 0%, #ffd700 60%, #facc15 100%);
+  color: #000000;
+  border: 5px solid #e0115f; /* Rosa mexicano grueso */
+  border-radius: var(--radius-full);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(224, 17, 95, 0.45), 0 0 25px rgba(255, 230, 0, 0.7);
+  animation: couponPulseGlowPinkYellow 2.4s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero__btn--coupon {
+    width: auto;
+  }
+}
+
+.hero__btn--coupon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.65) 50%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  animation: ctaShimmer 2.8s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.hero__btn--coupon:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 14px 40px rgba(224, 17, 95, 0.65), 0 0 32px rgba(255, 230, 0, 0.95);
+  border-color: #ff007f;
+  color: #000000;
+}
+
+.hero__btn--coupon:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.hero__btn-gift-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0115f;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  animation: giftBounce 1.8s infinite ease-in-out;
+}
+
+.hero__btn-gift {
+  color: #e0115f;
+}
+
+.hero__btn-sparkle-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0115f;
+  margin-left: 2px;
+  animation: sparkleRotate 2.5s infinite linear;
+}
+
+/* --- Modal del Cupón --- */
+.coupon-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.coupon-modal__card {
+  position: relative;
+  background: var(--color-surface-container-lowest, #ffffff);
+  border: 1px solid var(--color-border-subtle, #e5e7eb);
+  border-radius: var(--radius-xl, 20px);
+  padding: 32px 24px 24px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.coupon-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 50;
+  background-color: #ffffff;
+  border: 2px solid #9ca3af;
+  color: #111827;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.coupon-modal__close:hover {
+  background-color: #e0115f;
+  color: #ffffff;
+  border-color: #e0115f;
+  transform: scale(1.1);
+}
+
+.coupon-modal__close-icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  display: block;
+}
+
+.coupon-modal__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.coupon-modal__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 6px 14px;
+  border-radius: var(--radius-full, 9999px);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.coupon-modal__title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-on-surface, #111827);
+  margin: 4px 0 0 0;
+  line-height: 1.25;
+}
+
+.coupon-modal__desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-on-surface-variant, #4b5563);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.coupon-modal__code-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--color-surface-soft, #f9fafb);
+  border: 2px dashed #f59e0b;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.coupon-modal__code-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b45309;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.coupon-modal__code-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.coupon-modal__code {
+  font-family: monospace, monospace;
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: 0.08em;
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f59e0b;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-copy:hover {
+  background-color: #d97706;
+}
+
+.btn-copy--copied {
+  background-color: #10b981 !important;
+}
+
+.coupon-modal__actions {
+  width: 100%;
+}
+
+.coupon-modal__btn-wa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.coupon-modal__footer-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-on-surface-variant, #6b7280);
+  margin: 0;
+}
+
+/* Transiciones Vue */
+.fade-modal-enter-active,
+.fade-modal-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-modal-enter-from,
+.fade-modal-leave-to {
+  opacity: 0;
+}
+
+.fade-modal-enter-from .coupon-modal__card,
+.fade-modal-leave-to .coupon-modal__card {
+  transform: scale(0.92) translateY(12px);
+}
+
+@keyframes couponPulseGlowPinkYellow {
+  0% {
+    box-shadow: 0 8px 28px rgba(236, 72, 153, 0.45), 0 0 0 0 rgba(250, 204, 21, 0.6);
+  }
+  50% {
+    box-shadow: 0 12px 34px rgba(236, 72, 153, 0.7), 0 0 0 14px rgba(250, 204, 21, 0);
+  }
+  100% {
+    box-shadow: 0 8px 28px rgba(236, 72, 153, 0.45), 0 0 0 0 rgba(250, 204, 21, 0);
+  }
+}
+
+@keyframes giftBounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-3px) rotate(-8deg);
+  }
+  75% {
+    transform: translateY(-1px) rotate(8deg);
+  }
+}
+
+@keyframes sparkleRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
