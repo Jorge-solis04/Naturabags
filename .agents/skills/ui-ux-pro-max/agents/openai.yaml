@@ -1,0 +1,7 @@
+interface:
+  display_name: "NaturaBags UI/UX"
+  short_description: "Define y justifica la dirección de la interfaz."
+  default_prompt: "Usa $ui-ux-pro-max para evaluar esta decisión de interfaz con Organic Vitality y el código actual."
+
+policy:
+  allow_implicit_invocation: true

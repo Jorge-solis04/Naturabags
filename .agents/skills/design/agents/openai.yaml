@@ -1,0 +1,7 @@
+interface:
+  display_name: "NaturaBags Design"
+  short_description: "Coordina dirección visual e implementación web."
+  default_prompt: "Usa $design para coordinar esta solicitud de diseño de NaturaBags y dirigir cada etapa a la skill adecuada."
+
+policy:
+  allow_implicit_invocation: true

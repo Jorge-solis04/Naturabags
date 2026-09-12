@@ -84,7 +84,7 @@ export const products: Product[] = [
   {
     id: "Mix-jugo-valencia",
     name: "Mix Jugo Valencia",
-    price: 170,
+    price: 200,
     portions: "5 porciones",
     ingredients: ["Arándano", "Jícama", "Piña", "Espinaca", "Cúrcuma", "Jengibre", "Betabel", "Limón", "Toronja"],
     benefits: [
@@ -96,7 +96,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#A22321",
     image: "/img/kit_jugo_valencia.jpg",
-    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Jugo Valencia de 5 porciones por $170.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Jugo Valencia de 5 porciones por $200.00."
   },
   {
     id: "Mix-hielos-de-oro",
@@ -180,7 +180,7 @@ export const products: Product[] = [
   {
     id: "Mix-glow-rojo",
     name: "Mix Glow Rojo",
-    price: 130,
+    price: 140,
     portions: "5 porciones",
     ingredients: ["Betabel", "Zanahoria", "Fresa"],
     benefits: [
@@ -191,7 +191,7 @@ export const products: Product[] = [
     ],
     colorTheme: "#C0392B",
     image: "/img/kit_glow_rojo.jpeg",
-    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Glow Rojo por $130.00."
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Glow Rojo por $140.00."
   },
 
 ];

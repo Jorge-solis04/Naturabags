@@ -9,6 +9,13 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN pnpm install --frozen-lockfile
 
+# Variables públicas de Umami necesarias durante la compilación de Nuxt
+ARG NUXT_UMAMI_HOST
+ARG NUXT_UMAMI_ID
+
+ENV NUXT_UMAMI_HOST=${NUXT_UMAMI_HOST}
+ENV NUXT_UMAMI_ID=${NUXT_UMAMI_ID}
+
 # Copiar código fuente y generar sitio estático
 COPY . .
 RUN pnpm run generate

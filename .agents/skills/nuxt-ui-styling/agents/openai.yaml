@@ -1,0 +1,7 @@
+interface:
+  display_name: "Nuxt UI Styling"
+  short_description: "Implementa la UI NaturaBags en Nuxt y Vue."
+  default_prompt: "Usa $nuxt-ui-styling para implementar esta interfaz en NaturaBags respetando su sistema visual."
+
+policy:
+  allow_implicit_invocation: true
