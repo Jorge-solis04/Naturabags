@@ -104,82 +104,6 @@
   outline-offset: 4px;
 }
 
-.hero__showcase {
-  width: 100%;
-  max-width: 1120px;
-  border: 1px solid var(--color-outline-variant);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  background-color: var(--color-primary);
-}
-
-.hero__image-frame {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background-color: var(--color-surface-container-lowest);
-}
-
-.hero__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 54%;
-}
-
-.hero__image-label {
-  position: absolute;
-  inset-inline-start: var(--space-2);
-  inset-block-end: var(--space-2);
-  max-width: calc(100% - var(--space-4));
-  padding: 7px 12px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-accent-chip-bg);
-  color: var(--color-accent-chip-text);
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
-}
-
-.hero__process {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  color: var(--color-on-primary);
-}
-
-.hero__process-step {
-  min-height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: var(--space-1) 6px;
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
-  text-align: center;
-}
-
-.hero__process-step + .hero__process-step {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.28);
-}
-
-.hero__process-number {
-  width: 24px;
-  height: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border-radius: var(--radius-full);
-  background-color: var(--color-primary-container);
-  color: var(--color-text-on-accent);
-  font-size: 12px;
-  font-weight: 700;
-}
-
 .hero__trust {
   width: 100%;
   max-width: 1120px;
@@ -225,22 +149,6 @@
     width: auto;
   }
 
-  .hero__image-frame {
-    aspect-ratio: 16 / 7;
-  }
-
-  .hero__image-label {
-    inset-inline-start: var(--space-3);
-    inset-block-end: var(--space-3);
-    font-size: 13px;
-  }
-
-  .hero__process-step {
-    min-height: 72px;
-    gap: var(--space-1);
-    font-size: 15px;
-  }
-
   .hero__trust {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-2);
@@ -266,10 +174,6 @@
 
   .hero__description {
     font-size: 19px;
-  }
-
-  .hero__image-frame {
-    aspect-ratio: 8 / 3;
   }
 }
 

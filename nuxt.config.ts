@@ -11,8 +11,8 @@ export default defineNuxtConfig({
 
   // Configuración de Umami Analytics
   umami: {
-    // Estas configuraciones se pueden sobrescribir con variables de entorno en Dokploy:
-    // NUXT_UMAMI_HOST y NUXT_UMAMI_ID
+    host: 'https://analytics.naturabags.com.mx',
+    id: '81a92afa-127d-4c4b-98ae-9b5bd96cdf7d',
     ignoreLocalhost: true, // Evita contar tus propias visitas en localhost
     autoTrack: true,       // Rastrear páginas automáticamente al navegar
   },

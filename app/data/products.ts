@@ -12,29 +12,12 @@ export interface Product {
 }
 
 export const products: Product[] = [
-   {
-    id: "Kit-shots-de-bienestar",
-    name: "Kit de Shots de curcuma y jengibre",
-    price: 150,
-    portions: "7 shots de 30 ml",
-    ingredients: ["Cúrcuma", "Jengibre", "Naranja", "Zanahoria", "Limón", "Toque de pimienta"],
-    benefits: [
-      "Refuerza tus defensas",
-      "Antiinflamatorio natural",
-      "Aporta energía",
-      "Favorece la digestión"
-    ],
-    colorTheme: "#E67A00",
-    image: "/img/Three_products_in_pyramid_formation_202608010948.jpeg",
-    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de 7 Shots de Bienestar por $150.00.",
-    featured: "¡Nuevo!"
-  },
-  {
+     {
     id: "Mix-jugo-verde",
     name: "Mix de Jugo Verde",
     price: 100,
     portions: "5 porciones",
-    ingredients: ["Espinaca", "Apio", "Nopal", "Pepino", "Manzana verde", "Piña", "Limón", "Jengibre", "Perejil"],
+    ingredients: ["Espinaca", "Apio", "Nopal", "Pepino", "Piña"],
     benefits: [
       "Depura y desintoxica el organismo de forma natural",
       "Aporta gran saciedad y ayuda a regular el apetito",
@@ -45,6 +28,23 @@ export const products: Product[] = [
     colorTheme: "#27AE60",
     image: "/img/kit_jugo_verde.jpeg",
     whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit de Jugo Verde de 5 porciones por $100.00.",
+    featured: true
+  },
+   {
+    id: "Kit-shots-de-bienestar",
+    name: "Concentrado desinflamante",
+    price: 100,
+    portions: "Bolsa de 450 ml",
+    ingredients: ["Cúrcuma", "Jengibre", "Naranja", "Zanahoria", "Limón", "Toque de pimienta"],
+    benefits: [
+      "Refuerza tus defensas",
+      "Antiinflamatorio natural",
+      "Aporta energía",
+      "Favorece la digestión"
+    ],
+    colorTheme: "#E67A00",
+    image: "/img/shots.jpeg",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el concentrado por $100.00.",
     featured: true
   },
   {
@@ -192,6 +192,54 @@ export const products: Product[] = [
     colorTheme: "#C0392B",
     image: "/img/kit_glow_rojo.jpeg",
     whatsappMsg: "Hola NaturaBags, me interesa adquirir el Kit Glow Rojo por $140.00."
+  },
+  {
+    id: "Mix-diabetes",
+    name: "Mix para Diabetes",
+    price: 100,
+    portions: "5 porciones",
+    ingredients: ["Espinaca", "Apio", "Perejil", "Nopal", "Pepino", "Limón", "Jengibre", "Chía"],
+    benefits: [
+      "Apoya el control de glucosa como parte de una alimentación balanceada",
+      "Rico en fibra que ayuda a una absorción más lenta del azúcar",
+      "Ingredientes frescos, naturales y sin conservadores",
+      "Listo para agregar agua y licuar"
+    ],
+    colorTheme: "#558B2F",
+    image: "/img/mix_diabetes.png",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Mix para Diabetes de 5 porciones por $100.00."
+  },
+  {
+    id: "Mix-presion-arterial",
+    name: "Mix para la Presión Arterial",
+    price: 140,
+    portions: "5 porciones",
+    ingredients: ["Betabel", "Pepino", "Espinaca", "Apio", "Manzana verde", "Limón", "Perejil", "Cúrcuma"],
+    benefits: [
+      "Apoya una presión arterial saludable como parte de una alimentación balanceada",
+      "Rico en potasio y nitratos naturales que favorecen la circulación",
+      "Ayuda a reducir la retención de líquidos",
+      "Aporte de antioxidantes que cuidan tu corazón"
+    ],
+    colorTheme: "#1B5E20",
+    image: "/img/presion_arterial.png",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Mix para la Presión Arterial de 5 porciones por $140.00."
+  },
+  {
+    id: "Mix-bienestar-circulacion",
+    name: "Mix Bienestar y Circulación",
+    price: 140,
+    portions: "5 porciones",
+    ingredients: ["Betabel", "Pepino", "Piña", "Espinaca"],
+    benefits: [
+      "Favorece una buena circulación gracias a los nitratos naturales del betabel",
+      "Aporta hierro y antioxidantes que ayudan a combatir el cansancio",
+      "Hidrata y refresca el organismo",
+      "Mejora la digestión y reduce la inflamación"
+    ],
+    colorTheme: "#8E244D",
+    image: "/img/bienestarcirculacion.png",
+    whatsappMsg: "Hola NaturaBags, me interesa adquirir el Mix Bienestar y Circulación de 5 porciones por $140.00."
   },
 
 ];

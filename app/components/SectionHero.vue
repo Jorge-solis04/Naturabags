@@ -34,37 +34,6 @@
         </div>
       </div>
 
-      <div class="hero__showcase">
-        <div class="hero__image-frame">
-          <NuxtImg
-            src="/img/kit_jugo_verde.jpeg"
-            alt="Kit NaturaBags de Jugo Verde con cinco porciones de frutas y verduras listas para licuar"
-            class="hero__image"
-            width="1024"
-            height="1024"
-            sizes="xs:335px sm:600px md:728px lg:944px xl:1120px"
-            format="webp"
-            preload
-          />
-          <span class="hero__image-label">5 porciones en el kit mostrado</span>
-        </div>
-
-        <ol class="hero__process" aria-label="Preparación en tres pasos">
-          <li class="hero__process-step">
-            <span class="hero__process-number" aria-hidden="true">1</span>
-            <span>Abre</span>
-          </li>
-          <li class="hero__process-step">
-            <span class="hero__process-number" aria-hidden="true">2</span>
-            <span>Agrega agua</span>
-          </li>
-          <li class="hero__process-step">
-            <span class="hero__process-number" aria-hidden="true">3</span>
-            <span>Licúa</span>
-          </li>
-        </ol>
-      </div>
-
       <ul class="hero__trust" aria-label="Características de NaturaBags">
         <li class="hero__trust-item">
           <Icon name="lucide:leaf" size="18" aria-hidden="true" />
